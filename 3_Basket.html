@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Genshin BOX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/basket.css">
+</head>
+<body>
+<!-- Навигация -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="nav-logo">
+                    <img src="Images/Logo_def.png" alt="Логотип" class="nav-logo-def">
+                    <img src="Images/Logo_hover.png" alt="Логотип" class="nav-logo-hover">
+                </a>
+            </li> 
+            <li>
+                <div class="burger-container">
+                    <button class="nav-burger" id="burgerBtn">
+                        <img src="images/B_def.png" alt="Меню" class="nav-burger-def">
+                        <img src="images/B_hover.png" alt="Меню" class="nav-burger-hover">
+                        <img src="images/B_click.png" alt="Меню" class="nav-burger-click">
+                    </button>
+
+                    <div class="burger-menu" id="burgerMenu">
+                        <a href="index.html">Главная</a>
+                        <a href="#">О нас</a>
+                        <a href="#">Доставка</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input">
+                    <button class="search-btn">
+                        <img src="Images/search-icon.png" alt="Найти">
+                    </button>
+                </div>
+            </li> 
+            <li>
+                <a href="4_Lovely.html" class="nav-logo">
+                    <img src="images/Lovely_def.png" alt="Избранное" class="nav-Lovely-def">
+                    <img src="images/Lovely_hover.png" alt="Избранное" class="nav-Lovely-hover">
+                </a>
+            </li> 
+            <li>
+                <a href="#" class="nav-logo">
+                    <img src="images/LK_def.png" alt="Личный кабинет" class="nav-LK-def">
+                    <img src="images/LK_hover.png" alt="Личный кабинет" class="nav-LK-hover">
+                </a>    
+            </li> 
+            <li>
+                <a href="3_Basket.html" class="nav-logo">
+                    <img src="images/Basket_def.png" alt="Корзина" class="nav-Basket-def">
+                    <img src="images/Basket_hover.png" alt="Корзина" class="nav-Basket-hover">
+                </a>
+            </li> 
+        </ul>
+    </nav>
+
+    <main>
+        <section id="catalog">
+            <h1 class="zag-main-basket">Корзина</h1>
+        </section>
+
+        <!-- Bootstrap версия корзины -->
+        <div class="container-fluid">
+            <div class="row g-4">
+                <!-- Левая колонка (66%) -->
+                <div class="col-lg-8">
+                    <!-- Карточка товара -->
+                    <div class="card basket-item mb-4">
+                        <div class="card-body">
+                            <div class="row align-items-start">
+                                <div class="col-auto">
+                                    <div class="basket-item-image">
+                                        <img src="images/1_Y_Miko.png" alt="Фигурка Яэ Мико" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="basket-item-details h-100 d-flex flex-column">
+                                        <h3 class="basket-item-title mb-2">Фигурка Яэ Мико</h3>
+                                        <p class="basket-item-delivery">Дата доставки: 24 ноября</p>
+                                        <div class="basket-item-bottom mt-auto">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <div class="basket-item-quantity">-- 1 шт +</div>
+                                                <div class="basket-item-price">690 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="basket-item-actions d-flex flex-column gap-3">
+                                        <button class="delete-btn btn p-0">
+                                            <img src="images/cross.png" alt="Удалить">
+                                        </button>
+                                        <button class="heart-btn-bootstrap position-relative top-0 end-0 p-0 border-0 bg-transparent">
+                                            <img src="images/heart_def.png" alt="В избранное" class="heart-def-bootstrap">
+                                            <img src="images/heart_hov.png" alt="В избранное" class="heart-hov-bootstrap">
+                                            <img src="images/heart_click.png" alt="В избранное" class="heart-click-bootstrap">
+                                            <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov-bootstrap">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Способ доставки -->
+                    <div class="card dropdown-section mb-3">
+                        <div class="card-body">
+                            <button class="dropdown-header w-100 text-start border-0 bg-transparent p-0 d-flex justify-content-between align-items-center" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#deliveryMenu" 
+                                    aria-expanded="false" 
+                                    aria-controls="deliveryMenu">
+                                <span class="dropdown-title">Способ доставки</span>
+                                <img src="images/knopka.png" alt="Развернуть" class="dropdown-arrow">
+                            </button>
+                            <div class="collapse" id="deliveryMenu">
+                                <div class="dropdown-content mt-3"> <!-- Изменено с dropdown-menu на dropdown-content -->
+                                    <div class="dropdown-option">Курьерская доставка</div>
+                                    <div class="dropdown-option">Самовывоз из пункта выдачи</div>
+                                    <div class="dropdown-option">Почта России</div>
+                                    <div class="dropdown-option">СДЭК</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Способ оплаты -->
+                    <div class="card dropdown-section">
+                        <div class="card-body">
+                            <button class="dropdown-header w-100 text-start border-0 bg-transparent p-0 d-flex justify-content-between align-items-center" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#paymentMenu" 
+                                    aria-expanded="false" 
+                                    aria-controls="paymentMenu">
+                                <span class="dropdown-title">Способ оплаты</span>
+                                <img src="images/knopka.png" alt="Развернуть" class="dropdown-arrow">
+                            </button>
+                            <div class="collapse" id="paymentMenu">
+                                <div class="dropdown-content mt-3">
+                                    <div class="dropdown-option">Банковская карта</div>
+                                    <div class="dropdown-option">Наличными при получении</div>
+                                    <div class="dropdown-option">СБП</div>
+                                    <div class="dropdown-option">Электронные кошельки</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Правая колонка (33%) -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 170px;">
+                        <!-- Итоговая сумма -->
+                        <div class="card order-summary mb-3">
+                            <div class="card-body d-flex flex-column h-100">
+                                <div class="summary-rows flex-grow-1">
+                                    <div class="summary-row d-flex justify-content-between mb-3">
+                                        <span class="summary-label">Товары, 1 шт.</span>
+                                        <span class="summary-value">690 ₽</span>
+                                    </div>
+                                    <div class="summary-row d-flex justify-content-between mb-3">
+                                        <span class="summary-label ">Моя скидка</span>
+                                        <span class="summary-value">100 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="summary-total border-top pt-3 mt-auto">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="summary-label">Итого:</span>
+                                        <span class="summary-value">590 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Кнопка очистки -->
+                        <button class="btn clear-cart-btn w-100">Очистить корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="catalog">
+            <h1 class="zag-main-basket">Смотрите также:</h1>
+        </section>
+        
+        <!-- Каталог -->
+        <div class="container-fluid">
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card-bootstrap">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="images/2_Tart.png" alt="Гобелен Тарталья" class="card-img-top product-img-bootstrap">
+                            </a>
+                            <button class="heart-btn-bootstrap position-absolute top-0 end-0 m-3 p-0 border-0 bg-transparent">
+                                <img src="images/heart_def.png" alt="В избранное" class="heart-def-bootstrap">
+                                <img src="images/heart_hov.png" alt="В избранное" class="heart-hov-bootstrap">
+                                <img src="images/heart_click.png" alt="В избранное" class="heart-click-bootstrap">
+                                <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov-bootstrap">
+                            </button>
+                        </div>
+                        <div class="card-body d-flex justify-content-between align-items-end p-3 px-0">
+                            <div class="product-details-bootstrap">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="product-title-bootstrap mb-2">Гобелен Тарталья</h5>
+                                </a>
+                                <p class="product-price-bootstrap mb-0">890 ₽</p>
+                            </div>
+                            <button class="basket-btn-bootstrap d-flex align-items-center justify-content-center p-2 border-0 position-relative">
+                                <img src="images/Basket_def.png" alt="В корзину" class="basket-icon-bootstrap">
+                                <span class="basket-count-bootstrap position-absolute">1</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card-bootstrap">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="images/2_Rizly.png" alt="Гобелен Ризли" class="card-img-top product-img-bootstrap">
+                            </a>
+                            <button class="heart-btn-bootstrap position-absolute top-0 end-0 m-3 p-0 border-0 bg-transparent">
+                                <img src="images/heart_def.png" alt="В избранное" class="heart-def-bootstrap">
+                                <img src="images/heart_hov.png" alt="В избранное" class="heart-hov-bootstrap">
+                                <img src="images/heart_click.png" alt="В избранное" class="heart-click-bootstrap">
+                                <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov-bootstrap">
+                            </button>
+                        </div>
+                        <div class="card-body d-flex justify-content-between align-items-end p-3 px-0">
+                            <div class="product-details-bootstrap">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="product-title-bootstrap mb-2">Гобелен Ризли</h5>
+                                </a>
+                                <p class="product-price-bootstrap mb-0">890 ₽</p>
+                            </div>
+                            <button class="basket-btn-bootstrap d-flex align-items-center justify-content-center p-2 border-0 position-relative">
+                                <img src="images/Basket_def.png" alt="В корзину" class="basket-icon-bootstrap">
+                                <span class="basket-count-bootstrap position-absolute">1</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card-bootstrap">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="images/2_Kli.png" alt="Обложка на паспорт Кли" class="card-img-top product-img-bootstrap">
+                            </a>
+                            <button class="heart-btn-bootstrap position-absolute top-0 end-0 m-3 p-0 border-0 bg-transparent">
+                                <img src="images/heart_def.png" alt="В избранное" class="heart-def-bootstrap">
+                                <img src="images/heart_hov.png" alt="В избранное" class="heart-hov-bootstrap">
+                                <img src="images/heart_click.png" alt="В избранное" class="heart-click-bootstrap">
+                                <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov-bootstrap">
+                            </button>
+                        </div>
+                        <div class="card-body d-flex justify-content-between align-items-end p-3 px-0">
+                            <div class="product-details-bootstrap">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="product-title-bootstrap mb-2">Обложка на п. Кли</h5>
+                                </a>
+                                <p class="product-price-bootstrap mb-0">590 ₽</p>
+                            </div>
+                            <button class="basket-btn-bootstrap d-flex align-items-center justify-content-center p-2 border-0 position-relative">
+                                <img src="images/Basket_def.png" alt="В корзину" class="basket-icon-bootstrap">
+                                <span class="basket-count-bootstrap position-absolute">1</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card-bootstrap">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="images/2_Kaveh.png" alt="Обложка на паспорт Кавех" class="card-img-top product-img-bootstrap">
+                            </a>
+                            <button class="heart-btn-bootstrap position-absolute top-0 end-0 m-3 p-0 border-0 bg-transparent">
+                                <img src="images/heart_def.png" alt="В избранное" class="heart-def-bootstrap">
+                                <img src="images/heart_hov.png" alt="В избранное" class="heart-hov-bootstrap">
+                                <img src="images/heart_click.png" alt="В избранное" class="heart-click-bootstrap">
+                                <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov-bootstrap">
+                            </button>
+                        </div>
+                        <div class="card-body d-flex justify-content-between align-items-end p-3 px-0">
+                            <div class="product-details-bootstrap">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="product-title-bootstrap mb-2">Обложка на п. Кавех</h5>
+                                </a>
+                                <p class="product-price-bootstrap mb-0">590 ₽</p>
+                            </div>
+                            <button class="basket-btn-bootstrap d-flex align-items-center justify-content-center p-2 border-0 position-relative">
+                                <img src="images/Basket_def.png" alt="В корзину" class="basket-icon-bootstrap">
+                                <span class="basket-count-bootstrap position-absolute">1</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="footer-content">
+            <section class="footer-links">
+                <div class="links-column">
+                    <h3 class="column-title">Покупателям</h3>
+                    <a href="#" class="footer-link">Частые вопросы</a>
+                    <a href="#" class="footer-link">Личный кабинет</a>
+                    <a href="#" class="footer-link">Правовые акты</a>
+                    <a href="4_Lovely.html" class="footer-link">Избранное</a>
+                    <a href="#" class="footer-link">Доставка</a>
+                </div>
+
+                <div class="links-column">
+                    <h3 class="column-title">Компания</h3>
+                    <a href="#" class="footer-link">Вакансии</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">О нас</a>
+                </div>
+            </section>
+
+            <section class="footer-social">
+                <img src="images/QR_W.png" alt="QR код" class="qr-code">
+                <div class="social-buttons">
+                    <a href="https://t.me/+6QKBQJkrBmE0NTIy" class="social-btn vk-btn">
+                        <img src="images/VK%20logo.png" alt="VK">
+                    </a>
+                    <a href="https://t.me/+6QKBQJkrBmE0NTIy" class="social-btn tg-btn">
+                        <img src="images/TG%20logo.png" alt="Telegram">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line"></div>
+            <h3>Design by Кузнецова Анна &copy;</h3>
+        </div>
+    </footer>
+    
+    <!-- Хелп -->
+    <a href="#" class="help-btn">
+        <img src="images/Help_def.png" alt="Поддержка" class="help-def">
+        <img src="images/Help_hov.png" alt="Поддержка" class="help-hov">
+    </a>
+    
+    <!-- скРОЛЛ -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <img src="images/Up_def.png" alt="Наверх" class="up-def">
+        <img src="images/Up_hov.png" alt="Наверх" class="up-hov">
+    </button>   
+    
+    <!-- СКРИПТЫ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Бургер-меню
+        var isMenuOpen = false;
+        var burgerBtn = document.getElementById('burgerBtn');
+        var burgerMenu = document.getElementById('burgerMenu');
+
+        burgerBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                burgerMenu.classList.add('active');
+                burgerBtn.classList.add('active');
+            } else {
+                burgerMenu.classList.remove('active');
+                burgerBtn.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!burgerBtn.contains(e.target) && !burgerMenu.contains(e.target)) {
+                burgerMenu.classList.remove('active');
+                burgerBtn.classList.remove('active');
+                isMenuOpen = false;
+            }
+        });
+
+        // Корзина и Избранное
+        document.addEventListener('DOMContentLoaded', function() {
+            // Сердечки для карточек Bootstrap
+            document.querySelectorAll('.heart-btn-bootstrap').forEach(heartBtn => {
+                heartBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Корзины для карточек Bootstrap
+            document.querySelectorAll('.basket-btn-bootstrap').forEach(basketBtn => {
+                basketBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.classList.toggle('active');
+                });
+            });
+        });
+
+        // Кнопка скролла наверх
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollBtn = document.getElementById('scrollToTop');
+            const stopPosition = 500;
+
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.pageYOffset;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
+
+                if (scrollPosition > 300) {
+                    scrollBtn.classList.add('show');
+                    if (distanceFromBottom < stopPosition) {
+                        scrollBtn.classList.add('stopped');
+                    } else {
+                        scrollBtn.classList.remove('stopped');
+                    }
+                } else {
+                    scrollBtn.classList.remove('show');
+                    scrollBtn.classList.remove('stopped');
+                }
+            });
+
+            scrollBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

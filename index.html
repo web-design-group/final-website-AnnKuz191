@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Genshin BOX</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<!-- Навигация -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="nav-logo">
+                    <img src="Images/Logo_def.png" alt="Логотип" class="nav-logo-def">
+                    <img src="Images/Logo_hover.png" alt="Логотип" class="nav-logo-hover">
+                </a>
+            </li> 
+            <li>
+                <div class="burger-container">
+                    <button class="nav-burger burger-btn">
+                        <img src="images/B_def.png" alt="Меню" class="nav-burger-def">
+                        <img src="images/B_hover.png" alt="Меню" class="nav-burger-hover">
+                        <img src="images/B_click.png" alt="Меню" class="nav-burger-click">
+                    </button>
+
+                    <div class="burger-menu burger-content">
+                        <a href="index.html">Главная</a>
+                        <a href="#">О нас</a>
+                        <a href="#">Доставка</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input">
+                    <button class="search-btn">
+                        <img src="Images/search-icon.png" alt="Найти">
+                    </button>
+                </div>
+            </li> 
+            <li>
+                <a href="4_Lovely.html" class="nav-logo">
+                    <img src="images/Lovely_def.png" alt="Избранное" class="nav-Lovely-def">
+                    <img src="images/Lovely_hover.png" alt="Избранное" class="nav-Lovely-hover">
+                </a>
+            </li> 
+            <li>
+                <a href="#" class="nav-logo">
+                    <img src="images/LK_def.png" alt="Личный кабинет" class="nav-LK-def">
+                    <img src="images/LK_hover.png" alt="Личный кабинет" class="nav-LK-hover">
+                </a>    
+            </li> 
+            <li>
+                <a href="3_Basket.html" class="nav-logo">
+                    <img src="images/Basket_def.png" alt="Корзина" class="nav-Basket-def">
+                    <img src="images/Basket_hover.png" alt="Корзина" class="nav-Basket-hover">
+                </a>
+            </li> 
+        </ul>
+    </nav>
+
+    <main>
+<!-- ЗАЗЫВАЛКА -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- Левый блок с текстом -->
+                <div class="text-block">
+                    <h1>ПУТЕШЕСТВЕННИК, ДОБРО ПОЖАЛОВАТЬ!</h1>
+
+                    <ul class="features-list">
+                        <li>Высокое качество</li>
+                        <li>Скидки 10% новым покупателям</li>
+                        <li>Уникальный ассортимент</li>
+                        <li>Лицензированный мерч</li>
+                        <li>Выгодные предложения</li>
+                    </ul>
+
+                    <h2>ТЕЙВАТ БЛИЖЕ, ЧЕМ ТЫ ДУМАЕШЬ...</h2>
+
+                    <a href="#catalog" class="catalog-btn">Каталог</a>
+                </div>
+
+                <!-- Правый блок с картинкой -->
+                <div class="image-block">
+                    <img src="images/Paimon.png" alt="Паймон">
+                </div>
+            </div>
+        </section>
+        
+        <section id="catalog">
+            <h1 class="zag-main">Каталог</h1>
+        </section>
+        <section class="catalog-slider">
+            <div class="slider-container">
+                <!-- Кнопка влево -->
+                <button class="slider-btn slider-prev">
+                    <img src="images/Left-def.png" alt="Назад" class="btn-def">
+                    <img src="images/Left-hover.png" alt="Назад" class="btn-hover">
+                </button>
+
+                <!-- Слайды -->
+                <div class="slides">
+                    <div class="slide active">
+                        <img src="images/S_1.png" alt="Слайд 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/S_2.png" alt="Слайд 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/S_3.png" alt="Слайд 3">
+                    </div>
+                </div>
+
+                <!-- Кнопка вправо -->
+                <button class="slider-btn slider-next">
+                    <img src="images/Right-def.png" alt="Вперёд" class="btn-def">
+                    <img src="images/Right-hover.png" alt="Вперёд" class="btn-hover">
+                </button>
+            </div>
+
+            <!-- Кружочки -->
+            <div class="slider-indicator">
+                <img src="images/slide_1.png" alt="Индикатор 1" class="indicator-img">
+            </div>
+        </section>
+<!-- ФИЛЬТР И СОРТИРОВКА -->
+        <div class="filter-sort-container">
+        <!-- Кнопка Фильтр -->
+        <div class="filter-wrapper">
+                <button class="filter-btn filter-toggle">
+                    <span>Фильтр</span>
+                    <img src="images/knopka.png" alt="▼" class="filter-arrow">
+                </button>
+                <div class="filter-menu filter-content">
+                    <div class="filter-columns">
+                        <!-- Колонка 1 -->
+                        <div class="filter-column">
+                            <h3>Размер:</h3>
+                            <div class="filter-item">
+                                <span class="filter-option">38x34см</span>
+                                <span class="filter-count">8</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">41x33см</span>
+                                <span class="filter-count">3</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">42x34см</span>
+                                <span class="filter-count">4</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">36x34см</span>
+                                <span class="filter-count">5</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">40x35см</span>
+                                <span class="filter-count">2</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option show-all">Показать все</span>
+                            </div>
+                        </div>
+
+                        <!-- Колонка 2 -->
+                        <div class="filter-column">
+                            <h3>Тип фигурки:</h3>
+                            <div class="filter-item">
+                                <span class="filter-option">Акриловая</span>
+                                <span class="filter-count">155</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">Полноразмерная</span>
+                                <span class="filter-count">87</span>
+                            </div>
+                        </div>
+
+                        <!-- Колонка 3 -->
+                        <div class="filter-column">
+                            <h3>Декоративные элементы:</h3>
+                            <div class="filter-item">
+                                <span class="filter-option">Принт</span>
+                                <span class="filter-count">2</span>
+                            </div>
+                            <div class="filter-item">
+                                <span class="filter-option">Принт на груди</span>
+                                <span class="filter-count">16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопка Сортировка -->
+            <div class="sort-wrapper">
+                <button class="sort-btn sort-toggle">
+                    <img src="images/knopka.png" alt="▼" class="sort-arrow">
+                    <span>Сортировка</span>
+                </button>
+                <div class="sort-menu sort-content">
+                    <div class="sort-option">По возрастанию цены</div>
+                    <div class="sort-option">По убыванию цены</div>
+                </div>
+            </div>
+        </div>
+        
+<!-- КАРТОЧКИ ТОВАРОВ -->
+        <div class="product-catalog">
+            <!-- Первая строка -->
+            <!-- 1 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/1_Y_Miko.png" alt="Фигурка Яэ Мико" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Фигурка Яэ Мико</h3></a>
+                        <p class="product-price">690 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 2 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/1_Syao.png" alt="Фигурка Сяо" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Фигурка Сяо</h3></a>
+                        <p class="product-price">690 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 3 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/1_Kli.png" alt="Фигурка Кли" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Фигурка Кли</h3></a>
+                        <p class="product-price">690 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 4 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/1_Ch_Li.png" alt="Фигурка Чжун Ли" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Фигурка Чжун Ли</h3></a>
+                        <p class="product-price">690 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Вторая строка -->
+            <!-- 5 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/2_Tart.png" alt="Гобелен Тарталья" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Гобелен Тарталья</h3></a>
+                        <p class="product-price">890 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 6 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/2_Rizly.png" alt="Гобелен Ризли" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Гобелен Ризли</h3></a>
+                        <p class="product-price">890 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 7 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/2_Kli.png" alt="Обложка на паспорт Кли" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Обложка на п. Кли</h3></a>
+                        <p class="product-price">590 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 8 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/2_Kaveh.png" alt="Обложка на паспорт Кавех" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Обложка на п. Кавех</h3></a>
+                        <p class="product-price">590 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Третья строка -->
+            <!-- 9 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/3_Kaya.png" alt="Светильник Кэйа" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Светильник Кэйа</h3></a>
+                        <p class="product-price">1 650 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 10 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/3_Diluk.png" alt="Светильник Дилюк" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Светильник Дилюк</h3></a>
+                        <p class="product-price">1 650 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 11 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/3_Gan_Y.png" alt="Кошелёк Гань Юй" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Кошелёк Гань Юй</h3></a>
+                        <p class="product-price">699 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 12 -->
+            <section class="product-card">
+                <div class="product-image">
+                    <a href="#">
+                        <img src="images/3_B_Jy.png" alt="Кошелёк Бай Джу" class="product-img">
+                    </a>
+                    <button class="heart-btn">
+                        <img src="images/heart_def.png" alt="В избранное" class="heart-def">
+                        <img src="images/heart_hov.png" alt="В избранное" class="heart-hov">
+                        <img src="images/heart_click.png" alt="В избранное" class="heart-click">
+                        <img src="images/heart_click_hov.png" alt="В избранное" class="heart-click-hov">
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-details">
+                        <a href="#"><h3 class="product-title">Кошелёк Бай Джу</h3></a>
+                        <p class="product-price">699 ₽</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="basket-btn">
+                            <img src="images/Basket_def.png" alt="В корзину" class="basket-icon">
+                            <span class="basket-count">1</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<!-- ПОДВАЛ -->
+    
+    <footer>
+        <div class="footer-content">
+            <section class="footer-links">
+                <div class="links-column">
+                    <h3 class="column-title">Покупателям</h3>
+                    <a href="#" class="footer-link">Частые вопросы</a>
+                    <a href="#" class="footer-link">Личный кабинет</a>
+                    <a href="#" class="footer-link">Правовые акты</a>
+                    <a href="4_Lovely.html" class="footer-link">Избранное</a>
+                    <a href="#" class="footer-link">Доставка</a>
+                </div>
+
+                <div class="links-column">
+                    <h3 class="column-title">Компания</h3>
+                    <a href="#" class="footer-link">Вакансии</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">О нас</a>
+                </div>
+            </section>
+
+            <section class="footer-social">
+                <img src="images/QR_W.png" alt="QR код" class="qr-code">
+                <div class="social-buttons">
+                    <a href="https://t.me/+6QKBQJkrBmE0NTIy" class="social-btn vk-btn">
+                        <img src="images/VK%20logo.png" alt="VK">
+                    </a>
+                    <a href="https://t.me/+6QKBQJkrBmE0NTIy" class="social-btn tg-btn">
+                        <img src="images/TG%20logo.png" alt="Telegram">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line"></div>
+            <h3>Design by Кузнецова Анна &copy;</h3>
+        </div>
+         
+    </footer>
+    
+    <!-- СКРИПТЫ -->
+    
+    <!-- Универсальные скрипты на классах -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Бургер-меню
+            document.querySelectorAll('.burger-btn').forEach(burgerBtn => {
+                const burgerMenu = burgerBtn.closest('.burger-container').querySelector('.burger-content');
+                let isMenuOpen = false;
+
+                burgerBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    isMenuOpen = !isMenuOpen;
+
+                    if (isMenuOpen) {
+                        burgerMenu.classList.add('active');
+                        burgerBtn.classList.add('active');
+                    } else {
+                        burgerMenu.classList.remove('active');
+                        burgerBtn.classList.remove('active');
+                    }
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!burgerBtn.contains(e.target) && !burgerMenu.contains(e.target)) {
+                        burgerMenu.classList.remove('active');
+                        burgerBtn.classList.remove('active');
+                        isMenuOpen = false;
+                    }
+                });
+            });
+
+            // Фильтр и сортировка
+            document.querySelectorAll('.filter-toggle').forEach(filterBtn => {
+                const filterMenu = filterBtn.closest('.filter-wrapper').querySelector('.filter-content');
+                let filterOpen = false;
+
+                filterBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    filterOpen = !filterOpen;
+
+                    if (filterOpen) {
+                        filterMenu.classList.add('active');
+                        filterBtn.classList.add('active');
+                        // Закрываем сортировку если открыта
+                        document.querySelectorAll('.sort-content').forEach(menu => {
+                            menu.classList.remove('active');
+                        });
+                        document.querySelectorAll('.sort-toggle').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                    } else {
+                        filterMenu.classList.remove('active');
+                        filterBtn.classList.remove('active');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.sort-toggle').forEach(sortBtn => {
+                const sortMenu = sortBtn.closest('.sort-wrapper').querySelector('.sort-content');
+                let sortOpen = false;
+
+                sortBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    sortOpen = !sortOpen;
+
+                    if (sortOpen) {
+                        sortMenu.classList.add('active');
+                        sortBtn.classList.add('active');
+                        // Закрываем фильтр если открыт
+                        document.querySelectorAll('.filter-content').forEach(menu => {
+                            menu.classList.remove('active');
+                        });
+                        document.querySelectorAll('.filter-toggle').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                    } else {
+                        sortMenu.classList.remove('active');
+                        sortBtn.classList.remove('active');
+                    }
+                });
+            });
+
+            // Клик по опциям фильтра
+            document.querySelectorAll('.filter-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Клик по опциям сортировки
+            document.querySelectorAll('.sort-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    document.querySelectorAll('.sort-option').forEach(opt => {
+                        opt.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+
+            // Закрытие при клике вне области
+            document.addEventListener('click', function() {
+                document.querySelectorAll('.filter-content').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+                document.querySelectorAll('.filter-toggle').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelectorAll('.sort-content').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+                document.querySelectorAll('.sort-toggle').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            // Предотвращаем закрытие при клике внутри меню
+            document.querySelectorAll('.filter-content, .sort-content').forEach(menu => {
+                menu.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            });
+
+            // Сердечки для всех карточек
+            document.querySelectorAll('.heart-btn').forEach(heartBtn => {
+                heartBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Корзины для всех карточек
+            document.querySelectorAll('.basket-btn').forEach(basketBtn => {
+                basketBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Слайдер
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slider-prev');
+            const nextBtn = document.querySelector('.slider-next');
+            const indicator = document.querySelector('.indicator-img');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+                indicator.src = `images/slide_${index + 1}.png`;
+                currentSlide = index;
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    let nextIndex = currentSlide + 1;
+                    if (nextIndex >= slides.length) nextIndex = 0;
+                    showSlide(nextIndex);
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    let prevIndex = currentSlide - 1;
+                    if (prevIndex < 0) prevIndex = slides.length - 1;
+                    showSlide(prevIndex);
+                });
+            }
+
+            // Скролл наверх
+            const scrollBtn = document.querySelector('.scroll-top-btn');
+
+            if (scrollBtn) {
+                window.addEventListener('scroll', function() {
+                    const scrollPosition = window.pageYOffset;
+                    
+                    if (scrollPosition > 300) {
+                        scrollBtn.classList.add('show');
+                    } else {
+                        scrollBtn.classList.remove('show');
+                    }
+                });
+
+                scrollBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+    
+    <!-- Хелп -->
+    
+    <a href="#" class="help-btn">
+        <img src="images/Help_def.png" alt="Поддержка" class="help-def">
+        <img src="images/Help_hov.png" alt="Поддержка" class="help-hov">
+    </a>
+    
+    <!-- скРОЛЛЛЛЛ -->
+    
+    <button class="scroll-to-top scroll-top-btn">
+        <img src="images/Up_def.png" alt="Наверх" class="up-def">
+        <img src="images/Up_hov.png" alt="Наверх" class="up-hov">
+    </button>   
+    
+</body>
+</html>
