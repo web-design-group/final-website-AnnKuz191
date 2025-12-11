@@ -10,7 +10,7 @@ body {
     color: #FFF8CE;
     margin: 0;
     padding: 0px;
-    padding-top: 150px; /* Высота вашей навигации */
+    padding-top: 150px; 
 }
 
 main {
@@ -27,7 +27,7 @@ nav {
     width: 100%;
     height: 150px;
     background: #26004C;
-    z-index: 1000; /* Чтобы навигация была поверх других элементов */
+    z-index: 1000; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,7 +180,7 @@ nav li {
     border: 2px solid #FFF8CE;
     border-radius: 20px;
     background: transparent;
-    overflow: hidden; /* Чтобы кнопка не выходила за границы */
+    overflow: hidden; 
 }
 
 .search-input {
@@ -195,19 +195,18 @@ nav li {
 }
 
 .search-input:focus {
-    /* Граница меняется у контейнера */
 }
 
 .search-container:focus-within {
-    border-color: white; /* Меняем границу всего контейнера */
+    border-color: white; 
 }
 
 .search-btn {
-    width: 56px; /* Высота контейнера */
+    width: 56px; 
     height: 54px;
     background: #FFF8CE;
     border: none;
-    border-left: 0px solid #FFF8CE; /* Граница между инпутом и кнопкой */
+    border-left: 0px solid #FFF8CE; 
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -339,12 +338,12 @@ nav li {
 
 /* Левый блок с текстом */
 .text-block {
-    flex: 1 1 550px; /* Может сжиматься, минимальная ширина 500px */
+    flex: 1 1 550px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 586px;
-    max-width: 600px; /* Ограничиваем максимальную ширину */
+    max-width: 600px; 
 }
 
 .text-block h1 {
@@ -406,11 +405,11 @@ nav li {
 
 /* Правый блок с картинкой */
 .image-block {
-    flex: 1 1 500px; /* Может сжиматься, минимальная ширина 500px */
+    flex: 1 1 500px; 
     display: flex;
-    justify-content: center; /* Центрируем картинку */
+    justify-content: center; 
     align-items: center;
-    max-width: 701px; /* Ограничиваем максимальную ширину */
+    max-width: 701px; 
     margin-left: 40px;
 }
 
@@ -623,21 +622,21 @@ nav li {
 }
 
 .filter-column {
-    flex: 0 1 auto; /* Ширина по содержимому */
+    flex: 0 1 auto;
     white-space: nowrap; 
 }
 
 /* Настройка ширины колонок */
 .filter-column:first-child {
-    min-width: 150px; /* Размеры */
+    min-width: 150px; 
 }
 
 .filter-column:nth-child(2) {
-    min-width: 180px; /* Тип фигурки */
+    min-width: 180px; 
 }
 
 .filter-column:nth-child(3) {
-    min-width: 220px; /* Декоративные элементы */
+    min-width: 220px; 
 }
 
 .filter-column h3 {
@@ -652,7 +651,7 @@ nav li {
     align-items: center;
     padding: 8px 0;
     cursor: pointer;
-    gap: 15px; /* Уменьшенное расстояние */
+    gap: 15px; 
 }
 
 .filter-option {
@@ -1159,4 +1158,5 @@ footer h3 {
     opacity: 1;
     margin-left: 75px;
     visibility: visible;
+
 }
